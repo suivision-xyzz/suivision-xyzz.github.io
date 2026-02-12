@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "suivision-xyzz",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/suivision-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://suivision-xyzz.github.io/sitemap.xml/\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://suivision-xyzz.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "2wvymwk0vn",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 4,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Sui Explorer - SuiVision Blockchain | Home",
+        "meta_descr": "Explore Suivision, the next evolution in visual technology, combining AI, augmented reality (AR), and computer vision to transform .",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://suivision.xyz/\"><img src=\"@PROJECT_PATH@/assets/images/suivision.png\" alt=\"suivision\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vb14QxHWFK",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-2"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b>Sui Explorer - <a href=\"https://suivision.xyz/\" class=\"text-primary\">SuiVision </a>Blockchain | Home</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision</a>:&nbsp; A New Era in Visual Experience</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In recent years, the evolution of technology has revolutionized many aspects of daily life, from how we communicate to how we experience entertainment. One of the most exciting developments in this realm is the concept of <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision</a>—a term that blends the notions of \"supervision\" and \"vision\" to describe an advanced way of interacting with visual data.<br><br><a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>is not merely about enhanced vision; it signifies a new way of seeing, interpreting, and engaging with the world through the lens of technology. In this article, we'll explore the core concepts behind <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision</a>, its applications, and the future it promises for both individuals and industries.<br><br><b>What is <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>?</b><br><a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>refers to the integration of artificial intelligence (AI), augmented reality (AR), and computer vision to augment human perception. It aims to provide users with an enhanced visual experience that is not only about seeing clearly but also about interpreting, interacting with, and understanding visual data in ways that were previously unimaginable.<br><br>The word itself is derived from the fusion of \"supervision\"—meaning the action of overseeing or managing—and \"vision,\" which encompasses both the literal and figurative aspects of seeing. The goal of <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>is to improve how humans experience, understand, and manipulate the world around them visually.<br><br><b>Key Technologies Behind <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision</a></b><br><b>1. Artificial Intelligence (AI) and Machine Learning (ML)<br></b><a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>relies heavily on AI to interpret visual data, identify patterns, and even predict future occurrences. Through machine learning algorithms, Suivision systems can learn from vast amounts of data, allowing them to offer personalized experiences or even foresee changes in a user’s environment.<br><br><b>2. Augmented Reality (AR)<br></b>AR plays a vital role in <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>by overlaying digital information onto the real world. This could be as simple as navigation directions on a smartphone screen or as advanced as a fully immersive, interactive digital layer in a user’s view of the physical world.<br><br><b>3. Computer Vision<br></b>Computer vision is the technology that enables machines to \"see\" and interpret the visual world. <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>uses computer vision algorithms to process images, videos, and other visual data, allowing devices to understand and react to their surroundings in real-time.<br><br><b>4. Wearable Technology<br></b>Wearables like smart glasses, AR headsets, and other personal devices enable <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>by bringing these advanced technologies into the user’s field of view. These devices allow users to see extra layers of information, such as text translations, notifications, or real-time feedback on what they are observing.<br><br><b>Applications of Suivision</b><br><b>1. Enhanced Navigation :-<br></b><a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>technology can revolutionize navigation by offering real-time, AR-powered directions directly in a user's field of view. Instead of relying on a smartphone screen or external devices, users can get step-by-step guidance overlaid on their real-world environment, making it easier to follow paths in unfamiliar or crowded areas.<br><br><b>2. Healthcare and Diagnostics :-<br></b>In the medical field, <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>holds the potential to assist doctors and surgeons in diagnosing conditions, visualizing medical data in 3D, and performing complex procedures with greater precision. AI-driven visual analysis can identify health conditions from scans, images, and even video, helping doctors make better-informed decisions.<br><br><b>3. Education and Training :-<br></b>Imagine students learning complex subjects, such as anatomy or physics, with interactive 3D models floating in front of them, or workers in a factory receiving live feedback on their machinery's status through an AR display. <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>transforms education by making learning more interactive, immersive, and hands-on.<br><br><b>4. Retail and E-Commerce :-<br></b>For consumers, <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>offers opportunities for virtual try-ons, product visualizations, and interactive shopping experiences. Imagine being able to see how a new piece of furniture fits into your living room without moving a single object, or trying on clothes virtually through your phone camera.<br><br><b>5. Security and Surveillance :-<br></b>In the realm of security, <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>can be used to monitor crowds, identify potential threats, and provide law enforcement with real-time insights into the situation at hand. With advanced computer vision algorithms, <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>systems can detect suspicious activities, track movements, and even recognize faces or license plates.<br><br><b>Challenges and Ethical Considerations<br></b>While the potential for Suivision is vast, there are several challenges and ethical considerations to address. Some of the primary concerns include:<br><br><b>1.&nbsp; Privacy<br></b><a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>systems rely on a vast amount of visual and behavioral data. The ability to track individuals, analyze their behavior, and monitor their actions could raise significant privacy concerns. Ensuring that data collection is done ethically and securely is crucial.<br><br><b>2.&nbsp; Bias and Accuracy<br></b>AI and machine learning algorithms are only as good as the data they are trained on. If these systems are not properly trained or are exposed to biased data, they may produce inaccurate or discriminatory outcomes. It is vital for developers to ensure that <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>technologies are fair, unbiased, and transparent.<br><br><b>3.&nbsp; Security Risks<br></b>As <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>technology becomes more integrated into daily life, it could become a target for cyberattacks. Hackers might exploit vulnerabilities in these systems to manipulate data, invade privacy, or cause disruptions.<br><br><b>The Future of <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision</a><br></b>The future of <a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>holds incredible promise, with the potential to transform how we perceive and interact with the world. As AI, AR, and computer vision continue to advance, the integration of these technologies will only become more seamless, making Suivision a part of daily life in ways we are only beginning to explore.<br><br>From transforming industries like healthcare and education to providing everyday users with immersive and efficient tools for navigation, shopping, and communication, Suivision stands as a cornerstone for the next generation of visual experiences.<br><br>As we move forward, it will be important for society to strike a balance between innovation and ethical responsibility, ensuring that these technologies are developed and used in ways that respect privacy, fairness, and security. The ultimate goal is not just to see better, but to see more meaningfully and interactively, enhancing both personal and professional experiences in our increasingly digital world.<br><br><b>Conclusion -<br></b><a href=\"https://suivision.xyz/\" class=\"text-primary\">Suivision </a>is poised to change the way we interact with visual data, providing immersive and intelligent experiences that extend far beyond traditional forms of vision. With applications ranging from healthcare to entertainment, this innovative fusion of AI, AR, and computer vision promises to reshape our world. As this technology evolves, its potential is limitless, offering a new era where what we see and how we see it is transformed for the better.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vb14RELbNl",
+          "_anchor": "article07-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
